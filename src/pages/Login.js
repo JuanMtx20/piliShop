@@ -1,6 +1,6 @@
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
-import { useState } from "react/cjs/react.development";
 import apiFetch from "../resources/apiFetch";
 import config from "../resources/config"
 import { useNavigate } from 'react-router';

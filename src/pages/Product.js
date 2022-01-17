@@ -1,9 +1,8 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import { useParams } from "react-router-dom";
 import config from "../resources/config"
 import apiFetch from "../resources/apiFetch"
-import { useEffect, useState } from "react/cjs/react.development";
 import Context from "../context/Context";
 
 import { ToastContainer, toast } from 'react-toastify';

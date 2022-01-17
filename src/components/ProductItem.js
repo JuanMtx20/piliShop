@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import { useEffect, useState } from "react/cjs/react.development";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Context from "../context/Context";
 
@@ -9,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const ProductItem = ({product}) => {
     const {id, image, title, price, category} = product;
     const {cart, thisProductIsInCart, addProduct, removeProduct} = useContext(Context);
-    const [productBtnIcon, setProductBtnIcon] = useState();
+    const [productBtnIcon, setProductBtnIcon] = useState(0);
     
     const notify = (id, msg ) =>{ 
         if(! toast.isActive(id)) {
